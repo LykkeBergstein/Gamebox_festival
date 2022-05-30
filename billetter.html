@@ -1,0 +1,257 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title> Billetter </title> 
+        <script src="https://kit.fontawesome.com/a5ae5a65c5.js" crossorigin="anonymous"></script> 
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
+    </head> 
+    <body> 
+        <header> 
+            <nav class="mainNavigation" > 
+                <div class="logoDiv" > 
+                    <a href="index.html" class="logo" > 
+                        <img src="assets/img/gameboxFestivalLogo.png" alt="Gamebox Festivals logo" > 
+                    </a> 
+                </div> 
+                <div class="mainMenu" > 
+                    <ul class="menuList" > 
+                        <li class="menuListItem" > 
+                            <a href="billetter.html" > 
+                                BILLETTER 
+                            </a> 
+                        </li> 
+                        <li class="menuListItem" > 
+                            <a href="nyheder.html" > 
+                                NYHEDER 
+                            </a> 
+                        </li> 
+                        <li class="menuListItem" > 
+                            <a href="omGamebox.html" > 
+                                OM GAMEBOX 
+                            </a> 
+                        </li> 
+
+                        <div class="dropdownMenu" > 
+                            <li class="menuListItem  " > 
+                                INFORMATION 
+                            </li> 
+                            <div class="dropdownItems" > 
+                                <a href=""  class="dropdownItem"  > 
+                                    FAQ 
+                                </a>                               
+                                <a href="forældreinformation.html" class="dropdownItem"  >                                       
+                                   FORÆLDREINFORMATION 
+                                </a> 
+                                <a href="regler.html" class="dropdownItem"  >                                      
+                                    ORDENSREGLER 
+                                </a>                                           
+                                <a href="" class="dropdownItem"  >                                      
+                                   TURNERINGSREGLER 
+                                </a> 
+                                <a href="pakkeliste.html" class="dropdownItem"  >                                      
+                                    PAKKELISTE 
+                                 </a> 
+                            </div> 
+                        </div> 
+                        <li class="menuListItem" > 
+
+                            <a href="blivPartner.html" > 
+                                BLIV PARTNER 
+                            </a> 
+                        </li> 
+                    </ul> 
+                </div> 
+                <div class="socialMediaMenu" > 
+                    <!-- class="fa-lg" --> 
+                    <a href="https://www.facebook.com/Gamebox-Festival" target="_blank" >  <i class="fab fa-facebook-f"> </i> </a> 
+                    <a href="https://www.instagram.com/gamebox_festival/" target="_blank" >  <i class="fab fa-instagram"> </i> </a> 
+                    <a href="#" >  <i class="fab fa-twitter"> </i> </a> 
+                    <a href="#" >   <i class="fab fa-tiktok"> </i> </a>  
+                    <a href="#" >  <i class="fab fa-youtube"> </i> </a>  
+                </div> 
+            </nav> 
+        </header> 
+        <h2 > BILLETTER </h2> 
+        <h3 class="h3billetter">  TILMELD NYHEDSBREVET OG VÆR KLAR PÅ BILLETSALGET ÅBNER! </h3> 
+        
+    </body> 
+</html> 
+
+<style>  
+* { 
+    font-family: sans-serif; 
+    padding: 0; 
+    margin: 0; 
+} 
+.mainNavigation { 
+    display: flex; 
+    flex-direction: row;  
+    width: 100vw; 
+    height: 120px; 
+    background-color: #000000; 
+} 
+
+.logo { 
+    display: block; 
+    width: 148px;  
+    height: 55px; 
+    padding-left: 140px; 
+    margin: auto; 
+} 
+
+.menuList { 
+    display: flex; 
+    flex-direction: row; 
+    height: 100%; 
+    margin: auto; 
+} 
+
+.menuListItem { 
+    display: block; 
+    color: #FFFFFF; 
+    font-size: 16px; 
+    margin: auto 30px; 
+} 
+.menuListItem a { 
+    color: #FFFFFF; 
+    text-decoration: none; 
+} 
+
+/*dropdown */ 
+.dropdownMenu { 
+    height: auto; 
+    margin: auto 30px; 
+} 
+/* 
+.dropdownButton { 
+    display: block; 
+    width: auto; 
+    height: auto; 
+    background-color: red; 
+} */ 
+
+/*dropdown-content */ 
+.dropdownItems { 
+    display: none; 
+    position: absolute; 
+    flex-direction: column; 
+} 
+
+.dropdownItems a { 
+    text-decoration: none; 
+    color: #FFFFFF; 
+} 
+.dropdownMenu:hover .dropdownItems { 
+    display: flex; 
+} 
+.dropdownItem { 
+    display: block; 
+    width: auto; 
+
+    height: 30px; 
+    background-color: purple; 
+    padding: 25px 10px; 
+} 
+.socialMediaMenu , .logoDiv {  
+    display: flex; 
+    flex-direction: row;  
+    width: 415px; 
+    height: 100%; 
+/*    background-color: purple; */ 
+    margin: 0 auto; 
+} 
+
+.socialMediaMenu a {  
+    margin: auto 18px; 
+    text-decoration: none; 
+} 
+
+.fab { 
+    font-size: 16px; 
+    color: #FFFFFF; 
+} 
+
+p , .ruleList , .contactPartner , .partnerPromotion {    
+    color: #FFFFFF; 
+    width: 950px; 
+    margin: auto; 
+} 
+.partnerPromotion { 
+
+    padding-top: 10vh; 
+} 
+.contactPartner { 
+    padding-top: 40px; 
+} 
+.contactPartner li { 
+    list-style-type: none; 
+    padding-top: 0.5vh; 
+} 
+
+.contactPartner li a { 
+   color: #FFFFFF; 
+   text-decoration: none;  
+} 
+h2 { 
+    font-size: 40px; 
+    background-size: 100%; 
+    background-image: linear-gradient(45deg, #2476CC , #1CB6FA ); 
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+      text-align: center; 
+    margin: auto; 
+    padding-top: 10vh; 
+    padding-bottom: 7vh; 
+} 
+
+h3 { 
+    font-size: 25px; 
+    padding-top: 10vh; 
+    padding-bottom: 5vh; 
+    width: 950px;  
+    margin: auto; 
+    color: #FFFFFF; 
+} 
+
+.h3billetter { 
+    width: 540px; 
+    text-align: center; 
+    padding-top: 0; 
+} 
+
+.textGradient { 
+    display: block; 
+    font-weight: 600; 
+    font-size: 32px; 
+    width: 370px; 
+    background-size: 100%; 
+    background-image: linear-gradient(45deg, #05A6D9 , #01FBAD ); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+} 
+
+.alignRight { 
+    width: 100%; 
+    text-align: right; 
+} 
+
+.imagebox { 
+    display: block; 
+    width: 100%; 
+    height: 345px; 
+    margin: 40px auto; 
+} 
+
+li { 
+    list-style-type: circle; 
+} 
+
+body { 
+    background-color: #1F1F1F; 
+} 
+
+</style> 
