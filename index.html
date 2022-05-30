@@ -73,7 +73,7 @@
                     <a href="https://www.facebook.com/Gamebox-Festival" target="_blank" >  <i class="fab fa-facebook-f"> </i> </a> 
                     <a href="https://www.instagram.com/gamebox_festival/" target="_blank" >  <i class="fab fa-instagram"> </i> </a> 
                     <a href="#" >  <i class="fab fa-twitter"> </i> </a> 
-                    <a href="#" >   <i class="fab fa-tiktok"> </i> </a>  
+                    <a href="#" >  <i class="fab fa-tiktok"> </i> </a>  
                     <a href="#" >  <i class="fab fa-youtube"> </i> </a>  
                 </div> 
             </nav> 
@@ -94,6 +94,49 @@
             </div> 
         </div> --> 
     </body> 
+    <footer >  
+        <ul class="contactFooter" > 
+            <img class="MCHlogo" src="assets/img/MCH_W.png " alt="Messecenter Hernings logo "> 
+        </ul> 
+        <div class="footerContent" > 
+            <div class="footerLeft" > 
+                <ul class="contactFooter" > 
+                    <li > MCH Messecenter Herning </li> 
+                    <li > Vardevej 1 </li> 
+                    <li > 7400 Herning </li> 
+                </ul> 
+                <ul class="contactFooter" >  
+                    <li > Kontakt os </li> 
+                    <li >  <a href="mailto:info@gameboxfestival.dk  "> info@gameboxfestival.dk </a> </li> 
+                    <li > <a href="tel:99269926  "> Tlf: 9926 9926  </a>  </li> 
+                </ul> 
+
+                <ul class="contactFooter" > 
+                    <li > © Gamebox Festival 2022 </li> 
+                </ul> 
+            </div> 
+            <div class="footerMiddle" >  
+                <ul class="contactFooter" > 
+                    <li > <a href="https://www.mch.dk/persondatapolitik" target="_blank" > Privatpolitik </a> </li> 
+                    <li > <a href="https://www.mch.dk/cookies-(da)" target="_blank" > Cookies </a> </li> 
+                    <li > <a href="https://www.co3.dk/" target="_blank" > Website: Co3 </a> </li> 
+                </ul> 
+            </div> 
+            <div class="footerRight" > 
+                <div class="contactFooter" > 
+                    <li > Tilmeld dig nyhedsbrevet og stay tuned </li> 
+                    <div class="acceptTerms" > 
+                        <input class="acceptBox" type="checkbox" id="newsletterCheckbox" name="newsletterCheckbox" value="accept" > 
+                        <p class="acceptText" > Ved tilmelding accepterer jeg samtidig 'Vilkårene for modtagelse af nyhedsbrev'. </p> 
+                    </div> 
+                    <button class="newsletterButton" > 
+                        TILMELD 
+
+                    </button>   
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
 </html> 
 
 <style>  
@@ -115,8 +158,7 @@
     width: 148px;  
     height: 55px; 
     padding-left: 140px; 
-    margin: auto;  
-    
+    margin: auto;     
 } 
 
 .menuList { 
@@ -195,7 +237,7 @@
     display: block; 
     width: 100%; 
     height: 600px;  
-    background-color: #000000; 
+    background-color: blueviolet; 
 } 
 
 .headerText { 
@@ -212,14 +254,17 @@
   -webkit-text-fill-color: transparent; 
 } 
 
-.headerButton { 
+button { 
     display: block; 
     font-size: 20px; 
     line-height: 1.25; 
     border: 2px solid #FFFFFF; 
-    width: 350px; 
     background-color: transparent; 
     color: #FFFFFF; 
+} 
+
+.headerButton { 
+    width: 350px; 
     height: 100px; 
 } 
     .mainbox { 
@@ -235,4 +280,58 @@
         display: block; 
         width: 50%; 
     } 
+    footer { 
+        display: block; 
+        background-color: #000000; 
+        height: 515px; 
+        width: 100vw; 
+    } 
+.MCHlogo { 
+    padding-left: 140px; 
+} 
+    .footerContent { 
+        display: flex; 
+        flex-direction: row; 
+        margin: auto 140px; 
+    } 
+
+.contactFooter { 
+    list-style-type: none; 
+    color: #FFFFFF; 
+    padding-top: 60px; 
+    font-weight: bold; 
+    line-height: 1.5; 
+} 
+
+.contactFooter a { 
+    text-decoration: none; 
+    color: #FFFFFF; 
+} 
+
+.footerLeft , .footerMiddle , .footerRight { 
+    width: 33%; 
+} 
+
+.acceptTerms { 
+    display: flex; 
+    flex-direction: row; 
+} 
+
+.acceptBox { 
+    display: block; 
+    width: 18px; 
+    height: 18px; 
+    background-color: transparent; 
+    margin: 0px 5px 5px 0px; 
+} 
+.acceptText { 
+    display: block; 
+    width: 270px; 
+    font-size: 10px; 
+    font-style: italic; 
+} 
+.newsletterButton { 
+    width: 430px;  
+    height: 50px; 
+} 
 </style> 
