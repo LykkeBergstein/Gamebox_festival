@@ -125,6 +125,11 @@
             <div class="footerRight" > 
                 <div class="contactFooter" > 
                     <li > Tilmeld dig nyhedsbrevet og stay tuned </li> 
+                    <div class="custom-field" > 
+                        <input id="email-field " type="email" value="E-mail " >  
+
+                        <input id="postalcode-field"  type="text" value="Postnummer "  > 
+                    </div> 
                     <div class="acceptTerms" > 
                         <input class="acceptBox" type="checkbox" id="newsletterCheckbox" name="newsletterCheckbox" value="accept" > 
                         <p class="acceptText" > Ved tilmelding accepterer jeg samtidig 'Vilkårene for modtagelse af nyhedsbrev'. </p> 
@@ -310,6 +315,21 @@ button {
 
 .footerLeft , .footerMiddle , .footerRight { 
     width: 33%; 
+} 
+
+.custom-field { 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+#email-field , #postalcode-field { 
+
+    display: block; 
+    background-color: transparent; 
+    color: #707070; 
+    border: none; 
+    font-size: 16px; 
+    padding: 5vh 0px; 
 } 
 
 .acceptTerms { 
