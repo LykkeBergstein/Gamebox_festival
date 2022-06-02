@@ -1,0 +1,397 @@
+/* General CSS */ 
+@font-face {
+    font-family: 'Lemon Milk Pro Regular'; 
+
+    src: url(/assets/fonts/Lemon\ Milk\ Pro\ Regular.otf); 
+    }
+    
+* { 
+    font-family: 'Lemon Milk Pro Regular';     
+    padding: 0; 
+    margin: 0; 
+} 
+
+body { 
+    font-family: 'Lemon Milk Pro Regular'; 
+    color: #FFFFFF; 
+    background-image: url("/assets/img/baggrund.png");
+    background-color: #0D0020;
+    background-repeat: repeat-y; 
+}  
+
+h2 { 
+    font-size: 40px; 
+    background-size: 100%; 
+    background-image: linear-gradient(45deg, #2476CC , #1CB6FA ); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+      text-align: center; 
+    margin: auto; 
+    padding-top: 10vh; 
+    padding-bottom: 7vh; 
+} 
+
+h3 { 
+    font-size: 25px; 
+    padding-top: 10vh; 
+    padding-bottom: 5vh; 
+    width: 950px;  
+    margin: auto; 
+    color: #FFFFFF; 
+} 
+
+.textGradient { 
+    display: block; 
+    font-weight: 600; 
+    font-size: 32px; 
+    width: 370px; 
+    background-size: 100%; 
+    background-image: linear-gradient(45deg, #05A6D9 , #01FBAD ); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+} 
+
+.alignRight { 
+    width: 100%; 
+    text-align: right; 
+} 
+
+.blueRedGradient { 
+    background-image: linear-gradient(45deg, #036FE3 , #D55D1E ); 
+} 
+
+.alignCenter { 
+    width: 100%; 
+    text-align: center; 
+} 
+
+li { 
+    list-style-type: none; 
+} 
+
+button { 
+    display: block; 
+    font-size: 20px; 
+    line-height: 1.25; 
+    border: 2px solid #FFFFFF; 
+    background-color: transparent; 
+    color: #FFFFFF; 
+} 
+.underlineLink { 
+    text-decoration: underline; 
+    color: #FFFFFF; 
+} 
+
+/* Main navigation menu */ 
+.mainNavigation { 
+    display: flex; 
+    flex-direction: row;  
+    width: 100%; 
+    height: 120px; 
+    background-color: #000000; 
+} 
+    
+.logo { 
+    display: block; 
+    width: 148px;  
+    height: 55px; 
+    padding-left: 140px; 
+    margin: auto; 
+}  
+    
+    .menuList { 
+    display: flex; 
+    flex-direction: row; 
+    height: 100%; 
+    margin: auto; 
+    } 
+    
+    .menuListItem { 
+    display: block; 
+    color: #FFFFFF; 
+    font-size: 16px; 
+    margin: auto 30px; 
+    } 
+    .menuListItem a { 
+    color: #FFFFFF; 
+    text-decoration: none; 
+    } 
+
+    .dropdownMenu { 
+    height: auto; 
+    margin: auto 30px; 
+    } 
+
+    .dropdownItems { 
+    display: none; 
+    position: absolute; 
+    flex-direction: column; 
+    } 
+    
+    .dropdownItems a { 
+    text-decoration: none; 
+    color: #FFFFFF; 
+    } 
+    .dropdownMenu:hover .dropdownItems { 
+    display: flex; 
+    } 
+    .dropdownItem { 
+    display: block; 
+    width: auto; 
+    
+    height: 30px; 
+    background-color: purple; 
+    padding: 25px 10px; 
+    } 
+    .socialMediaMenu , .logoDiv {  
+    display: flex; 
+    flex-direction: row;  
+    width: 415px; 
+    height: 100%; 
+    margin: 0 auto; 
+    } 
+    
+    .socialMediaMenu a {  
+    margin: auto 18px; 
+    text-decoration: none; 
+    } 
+  
+    
+    .fab { 
+    font-size: 16px; 
+    color: #FFFFFF; 
+    } 
+/* Forside */ 
+.winners_of_tournaments {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .headerVideo { 
+        display: block; 
+        width: 100%; 
+        height: 600px;  
+        background-color: #000000; 
+    } 
+    .headerText { 
+    width: 700px; 
+    font-size: 55px; 
+    line-height: 1.5; 
+    text-align: center; 
+    margin: auto; 
+    padding-top: 10vh; 
+    background-size: 100%; 
+    background-image: linear-gradient(45deg, #E9434A , #D311EB ); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    } 
+    
+    .headerButton { 
+    display: block; 
+    font-size: 20px; 
+    line-height: 1.25; 
+    border: 2px solid #FFFFFF; 
+    width: 350px; 
+    background-color: transparent; 
+    color: #FFFFFF; 
+    height: 100px; 
+    } 
+
+/* Billetter */ 
+.h3billetter { 
+    width: 540px; 
+    text-align: center; 
+    padding-top: 0; 
+} 
+/* Om Gamebox Festival */ 
+article { 
+    padding-bottom: 5vh; 
+} 
+
+.aboutFlex { 
+    display: flex; 
+    flex-direction: row; 
+    padding-bottom: 7vh; 
+} 
+/* FAQ */ 
+.questionBox { 
+    width: 950px; 
+    height: 500px; 
+    display: block; 
+    margin: auto; 
+} 
+
+.question { 
+    display: flex; 
+    width: 100%; 
+    border-bottom: 2px solid #FFFFFF; 
+} 
+ 
+.faqIcon { 
+    display: block; 
+    align-self: right; 
+    color: #FFFFFF; 
+    width: 20px;  
+    height: 20px;  
+    position: relative; 
+    right: 15px;  
+    padding-top: 10vh;   
+} 
+
+.answer { 
+    display: block; 
+    height: 0px; 
+    padding-top: 5vh; 
+    visibility: hidden; 
+} 
+
+/* Regler */ 
+.listPoint { 
+    list-style-type: circle; 
+} 
+
+/* Turneringsregler */ 
+.gameRules { 
+    list-style-type: none; 
+} 
+
+/* Bliv partner */ 
+p , .ruleList , .contactPartner , .partnerPromotion {    
+    color: #FFFFFF; 
+    line-height: 1.5; 
+    width: 950px; 
+    margin: auto; 
+} 
+
+.partnerPromotion { 
+    padding-top: 10vh; 
+} 
+
+.imagebox { 
+    display: block; 
+    width: 100%; 
+    height: 345px; 
+    margin: 40px auto; 
+} 
+
+.contactPartner { 
+    padding-top: 40px; 
+} 
+
+.contactPartner li { 
+    list-style-type: none; 
+    padding-top: 0.5vh; 
+} 
+
+.contactPartner li a { 
+   color: #FFFFFF; 
+   text-decoration: none;  
+} 
+
+/* Footer */ 
+#email-field , #postalcode-field {     
+    color: #707070; 
+    border: none; 
+    font-size: 16px; 
+    margin: 5vh 0px; 
+    width: 430px; 
+    height: 45px;  
+    transform: skew(-20deg); /* Source: https://css-tricks.com/the-shapes-of-css/ */ 
+    padding: auto 15px; 
+} 
+
+.acceptTerms { 
+    display: flex; 
+    flex-direction: row; 
+} 
+
+.acceptBox { 
+    display: block; 
+    width: 18px; 
+    height: 18px; 
+    background-color: transparent; 
+    margin: 0px 5px 5px 0px; 
+} 
+.left , .right { 
+    display: block; 
+    width: 50%; 
+} 
+
+    footer { 
+        display: block; 
+        background-color: #000000; 
+        height: auto; 
+        width: 100vw; 
+        bottom: 0; 
+        margin-top: 10vh; 
+        padding-bottom: 5vh; 
+    } 
+.MCHlogo { 
+    padding-left: 140px; 
+} 
+    .footerContent { 
+        display: flex; 
+        flex-direction: row; 
+        margin: auto 140px;  
+    } 
+
+.contactFooter { 
+    list-style-type: none; 
+    color: #FFFFFF; 
+    padding-top: 60px; 
+    font-weight: bold; 
+    line-height: 1.5; 
+} 
+
+.contactFooter a { 
+    text-decoration: none; 
+    color: #FFFFFF; 
+} 
+
+.footerLeft , .footerMiddle , .footerRight { 
+    width: 33%; 
+} 
+
+.custom-field { 
+    display: flex; 
+    flex-direction: column; 
+} 
+.mainbox { 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+#email-field  #postalcode-field { 
+    display: block; 
+    width: 430px; 
+    height: 45px; 
+    transform: skew(-20deg); 
+    color: #707070; 
+    border: none; 
+    font-size: 16px; 
+    padding: 5vh 0px; 
+} 
+
+.acceptTerms { 
+    display: flex; 
+    flex-direction: row; 
+} 
+
+.acceptBox { 
+    display: block; 
+    width: 18px; 
+    height: 18px; 
+    background-color: transparent; 
+    margin: 0px 5px 5px 0px; 
+
+} 
+.acceptText { 
+    display: block; 
+    width: 270px; 
+    font-size: 10px; 
+    font-style: italic; 
+} 
+.newsletterButton { 
+    width: 430px;  
+    height: 50px; 
+} 

@@ -6,6 +6,7 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title> Bliv partner </title> 
+        <link href="assets/css/styles.css" rel="stylesheet" > 
         <script src="https://kit.fontawesome.com/a5ae5a65c5.js" crossorigin="anonymous"></script> 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
@@ -98,177 +99,53 @@
             <ul class="contactPartner" > 
                 <li > LARS MEEDOM </li> 
                 <li > PROJEKTLEDER SALG </li> 
-                <li > <a href="tel:99269920 "> T: 99269920 </a>  </li> 
+                <li > <a href="tel:99269920 "> Tlf: 99269920 </a>  </li> 
                 <li >  <a href="mailto:lme@mch.dk "> M: LME@MCH.DK </a> </li> 
             </ul> 
     </body> 
+    <footer>   
+        <ul class="contactFooter" > 
+            <img class="MCHlogo" src="assets/img/MCH_W.png " alt="Messecenter Hernings logo "> 
+        </ul> 
+        <div class="footerContent" > 
+            <div class="footerLeft" > 
+                <ul class="contactFooter" > 
+                    <li > MCH Messecenter Herning </li> 
+                    <li > Vardevej 1 </li> 
+                    <li > 7400 Herning </li> 
+                </ul> 
+                <ul class="contactFooter" >  
+                    <li > Kontakt os </li> 
+                    <li >  <a href="mailto:info@gameboxfestival.dk  "> info@gameboxfestival.dk </a> </li> 
+                    <li > <a href="tel:99269926  "> Tlf: 9926 9926  </a>  </li> 
+                </ul> 
+                <ul class="contactFooter" > 
+                    <li > © Gamebox Festival 2022 </li> 
+                </ul> 
+            </div> 
+            <div class="footerMiddle" >  
+                <ul class="contactFooter" > 
+                    <li > <a href="https://www.mch.dk/persondatapolitik" target="_blank" > Privatpolitik </a> </li> 
+                    <li > <a href="https://www.mch.dk/cookies-(da)" target="_blank" > Cookies </a> </li> 
+                    <li > <a href="https://www.co3.dk/" target="_blank" > Website: Co3 </a> </li> 
+                </ul> 
+            </div> 
+            <div class="footerRight" > 
+                <div class="contactFooter" > 
+                    <li > Tilmeld dig nyhedsbrevet og stay tuned </li> 
+                    <div class="custom-field" > 
+                        <input id="email-field " type="email" value="E-mail " >  
+                        <input id="postalcode-field"  type="text" value="Postnummer "  > 
+                    </div>     
+                    <div class="acceptTerms" > 
+                        <input class="acceptBox" type="checkbox" id="newsletterCheckbox" name="newsletterCheckbox" value="accept" > 
+                        <p class="acceptText" > Ved tilmelding accepterer jeg samtidig 'Vilkårene for modtagelse af nyhedsbrev'. </p> 
+                    </div> 
+                    <button class="newsletterButton" > 
+                        TILMELD 
+                    </button> 
+                </div> 
+            </div> 
+        </div>               
+    </footer> 
 </html> 
-
-<style>  
-* { 
-    font-family: sans-serif; 
-    padding: 0; 
-    margin: 0; 
-} 
-.mainNavigation { 
-    display: flex; 
-    flex-direction: row;  
-    width: 100vw; 
-    height: 120px; 
-    background-color: #000000; 
-} 
-
-.logo { 
-    display: block; 
-    width: 148px;  
-    height: 55px; 
-    padding-left: 140px; 
-    margin: auto; 
-} 
-
-.menuList { 
-    display: flex; 
-    flex-direction: row; 
-    height: 100%; 
-    margin: auto; 
-} 
-
-.menuListItem { 
-    display: block; 
-    color: #FFFFFF; 
-    font-size: 16px; 
-    margin: auto 30px; 
-} 
-.menuListItem a { 
-    color: #FFFFFF; 
-    text-decoration: none; 
-} 
-
-/*dropdown */ 
-.dropdownMenu { 
-    height: auto; 
-    margin: auto 30px; 
-} 
-/* 
-.dropdownButton { 
-    display: block; 
-    width: auto; 
-    height: auto; 
-    background-color: red; 
-} */ 
-
-/*dropdown-content */ 
-.dropdownItems { 
-    display: none; 
-    position: absolute; 
-    flex-direction: column; 
-} 
-
-.dropdownItems a { 
-    text-decoration: none; 
-    color: #FFFFFF; 
-} 
-.dropdownMenu:hover .dropdownItems { 
-    display: flex; 
-} 
-.dropdownItem { 
-    display: block; 
-    width: auto; 
-
-    height: 30px; 
-    background-color: purple; 
-    padding: 25px 10px; 
-} 
-.socialMediaMenu , .logoDiv {  
-    display: flex; 
-    flex-direction: row;  
-    width: 415px; 
-    height: 100%; 
-/*    background-color: purple; */ 
-    margin: 0 auto; 
-} 
-
-.socialMediaMenu a {  
-    margin: auto 18px; 
-    text-decoration: none; 
-} 
-
-.fab { 
-    font-size: 16px; 
-    color: #FFFFFF; 
-} 
-
-p , .ruleList , .contactPartner , .partnerPromotion {    
-    color: #FFFFFF; 
-    width: 950px; 
-    margin: auto; 
-} 
-.partnerPromotion { 
-
-    padding-top: 10vh; 
-} 
-.contactPartner { 
-    padding-top: 40px; 
-} 
-.contactPartner li { 
-    list-style-type: none; 
-    padding-top: 0.5vh; 
-} 
-
-.contactPartner li a { 
-   color: #FFFFFF; 
-   text-decoration: none;  
-} 
-h2 { 
-    font-size: 40px; 
-    background-size: 100%; 
-    background-image: linear-gradient(45deg, #2476CC , #1CB6FA ); 
-    -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-      text-align: center; 
-    margin: auto; 
-    padding-top: 10vh; 
-    padding-bottom: 7vh; 
-} 
-
-h3 { 
-    font-size: 25px; 
-    padding-top: 10vh; 
-    padding-bottom: 5vh; 
-    width: 950px;  
-    margin: auto; 
-    color: #FFFFFF; 
-} 
-
-.textGradient { 
-    display: block; 
-    font-weight: 600; 
-    font-size: 32px; 
-    width: 370px; 
-    background-size: 100%; 
-    background-image: linear-gradient(45deg, #05A6D9 , #01FBAD ); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-} 
-
-.alignRight { 
-    width: 100%; 
-    text-align: right; 
-} 
-
-.imagebox { 
-    display: block; 
-    width: 100%; 
-    height: 345px; 
-    margin: 40px auto; 
-} 
-
-li { 
-    list-style-type: circle; 
-} 
-
-body { 
-    background-color: #1F1F1F; 
-} 
-
-</style> 
