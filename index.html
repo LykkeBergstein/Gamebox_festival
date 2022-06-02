@@ -90,7 +90,7 @@
         </video>
     </div> 
     
-    <div>
+    <section>
 
         <p>LAN • BATTLES • GAMING • COSPLAY • TALKS • UDSTYR</p>
 
@@ -102,43 +102,41 @@
             var der også LAN-party!
         </p>
 
-    </div>
-
-
-
+    </section>
 
 
 
     <section>
         <h1>highlights for 2022</h1>
 
-        <div>
+        <article class="hightlight_ikon_container">
             <div>
-                <img src="" alt="">
-                8.642
-                Besøgende
+                <img class="highlight_ikon" src="/assets/img/users.png" alt="">
+                
+                <p><b>8.642</b>Besøgende</p>
             </div>
 
             
             <div>
-                <img src="" alt="">
-                850
-                LAN-Deltagere
+                <img class="highlight_ikon" src="/assets/img/monitor.png" alt="">
+                
+                <p><b>850</b>LAN-Deltagere</p>
             </div>
 
 
             <div>
-                <img src="" alt="">
-                300.000+
-                Seer online via streams
+                <img class="highlight_ikon" src="/assets/img/eye.png" alt="">
+                
+                <p><b>300.000+</b>Seer online via streams</p>
+                
             </div>
 
-        </div>
+        </article>
         
 
 
 
-        <div class="winners_of_tournaments">
+        <article class="winners_of_tournaments">
             <div>
                 <img src="/assets/img/GBF_300x493_Porsche.png" alt="">
                 <p>Mikkel Gade - Vinderen af DM i digital motorsport</p>
@@ -151,9 +149,9 @@
                 <img src="/assets/img/GBF_300x493_RBSQ.png" alt="">
                 <p>Curl - Den danske vinder af Redbull Solo Q</p>
             </div>
-        </div>
+        </article>
         
-        <div>
+        <article>
             <div>
                 <img src="/assets/img/GBF_300x493_DBU_U17+.png" alt="">
                 <p>Nordens Paris FC - Vinderne af DBU eFodbold U17+</p>
@@ -162,14 +160,8 @@
                 <img src="/assets/img/GBF_300x493_DBU_U13-U16.png" alt="">
                 <p>Starup UIF - Vinderne af DBU eFodbold U13-U16</p>
             </div>
-        </div>
+        </article>
 
-
-
-
-
-
-        
         <button class="headerButton" > 
             Læse mere om Gamebox
         </button> 
@@ -184,29 +176,27 @@
         <p>Main</p>
 
         <div>
-            <img src="/assets/img/jyske_bank.png" alt="">
-            <img src="/assets/img/elgiganten.png" alt="">
-            <img src="/assets/img/hummel.png" alt="">
+            <img class="partner_logo" src="/assets/img/jyske_bank_logo.png" alt="">
+            <img class="partner_logo" src="/assets/img/elgiganten_logo.png" alt="">
+            <img class="partner_logo" src="/assets/img/hummel_logo.png" alt="">
         </div>
         <div>
-            <img src="/assets/img/itrelation.png" alt="">
-            <img src="/assets/img/calsberg_sport.png" alt="">
+            <img class="partner_logo" src="/assets/img/itrelation_logo.png" alt="">
+            <img class="partner_logo" src="/assets/img/calsberg_sport_logo.png" alt="">
         </div>
 
         <p>Supporting</p>
 
-        <div>
-            <img src="/assets/img/dgi.png" alt="">
-            <img src="/assets/img/dif.png" alt="">
-            <img src="/assets/img/esportdanmark.png" alt="">
-            <img src="/assets/img/astralis.png" alt="">
-        </div>
-        <div>
-            <img src="/assets/img/ungdomsringen.png" alt="">
-            <img src="/assets/img/danskfirmaidræt.png" alt="">
-            <img src="/assets/img/htlv.png" alt="">
-            <img src="/assets/img/nph.png" alt="">
-        </div>
+        <article>
+            <img class="partner_logo" src="/assets/img/dgi_logo.png" alt="">
+            <img class="partner_logo" src="/assets/img/dif_logo.png" alt="">
+            <img class="partner_logo" src="/assets/img/esportdanmark_logo.png" alt="">
+            <img class="partner_logo" src="/assets/img/astralis_logo.png" alt="">
+            <img class="partner_logo" src="/assets/img/ungdomsringen_logo.png" alt="">
+            <img class="partner_logo" src="/assets/img/danskfirmaidræt_logo.png" alt="">
+            <img class="partner_logo" src="/assets/img/htlv_logo.png" alt="">
+            <img class="partner_logo" src="/assets/img/nph_logo.png" alt="">
+        </article>
 
     </section>
     
@@ -223,14 +213,30 @@ src: url(assets/fonts/Lemon\ Milk\ Pro\ Regular.otf);
 }
 
 
+
+.partner_logo {
+    height: 50px;
+}
+
 .winners_of_tournaments {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 }
 
 
-body { 
 
+.hightlight_ikon_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.highlight_ikon {
+    width: 75px;
+}
+
+body { 
+    text-align: center;
 font-family: 'Lemon Milk Pro Regular'; 
 padding: 0; 
 margin: 0; 
@@ -240,6 +246,12 @@ background-image: url("/assets/img/baggrund.png");
 background-color: #0D0020;
 background-repeat: repeat-y;
 } 
+
+
+
+
+
+
 .mainNavigation { 
 display: flex; 
 flex-direction: row;  
