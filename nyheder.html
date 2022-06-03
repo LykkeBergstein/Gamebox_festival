@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title> Nyheder </title> 
         <link href="assets/css/styles.css" rel="stylesheet" > 
+        <script src="assets/js/data.js" ></script> 
         <script src="https://kit.fontawesome.com/a5ae5a65c5.js" crossorigin="anonymous"></script> 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
@@ -82,18 +83,20 @@
             <br> <br> 
             Anmodning om akkreditering sker via nedenstående link. Godkendelse kan tage op til to hverdage, og du modtager dit personlige pressekort pr. mail. </p> 
             <br> 
+
             <a href="https://presse.gameboxfestival.dk/Webshop/Identification?id=688&languageId=1 " target="_blank" >  
                 <button class="centerButton"  > 
                     AKKREDITERING 
                 </button> 
             </a> 
             <div class="lineBox "> </div> 
+        <div id="newsArticleBox"  > 
             <div class="newsArticle" > 
                 <h3 class="newsHeadline "  > OVERSKRIFT </h3>  
                 <p > 1. JANUAR 2022 </p> 
                 <div class="lineBox "> </div> 
            </div> 
-
+        </div> 
            
     
     </body> 
@@ -143,9 +146,20 @@
         </div>               
     </footer> 
 </html> 
+
 <script > 
 
+let articles = JSON.parse (articlesJS) ; 
+let articleParent = document.querySelector ("#newsArticleBox" ) ; 
+let articleFormat = ""; 
 
-
-
+articles.forEach (article => { 
+    articleFormat += `   
+    <div class="newsArticle" > 
+        <h3 class="newsHeadline "  > ${article.title} </h3>  
+            <p > ${article.date} </p> 
+            <div class="lineBox "> </div> 
+       </div> ` 
+    }) 
+    articleParent.innerHTML = articleFormat; 
 </script> 

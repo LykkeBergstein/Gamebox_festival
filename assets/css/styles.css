@@ -97,7 +97,10 @@ a {
     height: 120px; 
     background-color: #000000; 
 } 
-    
+.mobileMenu { 
+    display: block; 
+    margin: auto 0; 
+}     
 .logo { 
     display: block; 
     width: 148px;  
@@ -276,6 +279,13 @@ a {
     padding-top: 0; 
 } 
 
+.ticketNewsletter { 
+    display: block; 
+    margin: auto; 
+    width: 430px; 
+    padding-bottom: 40vh; 
+} 
+
 /* Nyheder */ 
 .lineBox { 
     display: block; 
@@ -383,18 +393,6 @@ p , .ruleList , .contactPartner , .partnerPromotion {
     padding: auto 15px; 
 } 
 
-.acceptTerms { 
-    display: flex; 
-    flex-direction: row; 
-} 
-
-.acceptBox { 
-    display: block; 
-    width: 18px; 
-    height: 18px; 
-    background-color: transparent; 
-    margin: 0px 5px 5px 0px; 
-} 
 .left , .right { 
     display: block; 
     width: 50%; 
@@ -470,6 +468,7 @@ p , .ruleList , .contactPartner , .partnerPromotion {
 } 
 .acceptText { 
     display: block; 
+    margin: 0 0 20px 0; 
     width: 270px; 
     font-size: 10px; 
     font-style: italic; 
@@ -477,4 +476,107 @@ p , .ruleList , .contactPartner , .partnerPromotion {
 .newsletterButton , .centerButton { 
     width: 430px;  
     height: 50px; 
+} 
+
+
+/* Mobile version */ 
+@media only screen and (max-device-width: 412px) { 
+    * { 
+        max-width: 412px; 
+    } 
+
+    body { 
+        display: block ; 
+        background-color: red; 
+        color: red; 
+    } 
+
+    .mainNavigation { 
+        display: flex ; 
+        flex-direction: row; 
+        width: 100%; 
+        height: 120px; 
+        background-color: yellow; 
+    } 
+
+    .logo { 
+        display: block; 
+        width: 75px;  
+        height: auto;  
+       align-items: left; 
+    } 
+
+    .mobileMenu { 
+        display: block; 
+        background-color: pink; 
+        width: 100%; 
+        height: 100%; 
+        position: absolute; 
+        margin-top: 120px; 
+    }     
+   
+    .menuList { 
+        display: flex; 
+        flex-direction: column; 
+        width: 100%; 
+        margin: auto; 
+    }  
+        
+    .menuListItem { 
+        display: block; 
+        color: #FFFFFF; 
+
+        font-size: 25px; 
+        margin: 2.5vh auto; 
+    } 
+    
+    .menuListItem a { 
+        color: #FFFFFF; 
+        text-decoration: none; 
+    } 
+    .menuListItem li { 
+        display: block; 
+        width: auto; 
+        margin: auto; 
+    } 
+    .dropdownMenu { 
+        height: auto; 
+        margin: auto ; 
+    } 
+    
+    .dropdownItems { 
+        display: none; 
+        position: absolute; 
+        flex-direction: column; 
+    } 
+        
+    .dropdownItems a { 
+        text-decoration: none; 
+        color: #FFFFFF; 
+    } 
+    
+    .dropdownMenu:hover .dropdownItems { 
+        display: flex; 
+    } 
+    
+        .dropdownItem { 
+        display: block; 
+        width: auto; 
+        
+        height: 30px; 
+        background-color: purple; 
+        padding: 25px 10px; 
+        } 
+   .logoDiv {  
+        display: flex; 
+        flex-direction: row;  
+        width: 50%; 
+        height: 100%; 
+        margin: 0; 
+    } 
+        
+    .socialMediaMenu  {  
+        display: none; 
+    } 
+   
 } 
