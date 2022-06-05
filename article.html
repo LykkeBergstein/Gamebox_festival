@@ -5,8 +5,9 @@
 
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title> Forside </title> 
+        <title> Nyheder </title> 
         <link href="assets/css/styles.css" rel="stylesheet" > 
+        <script src="assets/js/data.js" ></script> 
         <script src="https://kit.fontawesome.com/a5ae5a65c5.js" crossorigin="anonymous"></script> 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
@@ -80,113 +81,11 @@
             </div> 
         </nav> 
     </header> 
-    <div class="headerVideo " > 
-        <video autoplay loop> 
-            <source src="../assets/img/headervideo.mp4" type="video/mp4">
-        </video > 
-        <div class="videoOverlay "> 
-            <h1 class="headerText" > DANMARKS STØRSTE GAMINGEVENT VENDER TILBAGE I 2023! </h1> 
-            <button class="headerButton" > 
-                HOLD DIG OPDATERET MED VORES NYHEDSBREV 
-            </button> 
-        </div> 
-    </div> 
     
-    <section > 
-        <h3 class="alignCenter" >  LAN • BATTLES • GAMING • COSPLAY • TALKS • UDSTYR </h3> 
-        <p>
-            Indstil sigtekornet på Gamebox Festival – Danmarks største gamingevent. 
-            22.-24. april 2022 fyldte vi 30.000 m2 i MCH Messecenter Herning med alt 
-            inden for gaming og esport. Der kunne opleves spændende showkampe, kendte spillere og youtubere. 
-            Der var mulighed for at teste sine skills, og måle sig mod venner og familie. Selvfølgelig 
-            var der også LAN-party!
-        </p> 
-    </section> 
+    <div id="articleBox">
 
-    <section> 
-        <h3 class="alignCenter " > HIGHLIGHTS FOR 2022 </h3> 
-        <div class="highlightsBox alignCenter ">  
-            <div class="statistics"  > 
-                <img class="highlight_ikon" src="/assets/img/users.png" alt="">
-                <p class=" highlightNumbers"  > 8.642 </p> 
-                <p class="highlightText" > BESØGENDE </p> 
-            </div> 
+    </div>
 
-            <div class="statistics "> 
-                <img class="highlight_ikon" src="/assets/img/monitor.png" alt="">
-                <p class="  highlightNumbers" > 850 </p> 
-                <p class="highlightText" > LAN-DELTAGERE </p> 
-            </div> 
-            <div class="statistics "> 
-                <img class="highlight_ikon" src="/assets/img/eye.png" alt="">
-                <p class=" highlightNumbers" > 300.000+ </p> 
-                <p class="highlightText" > SEERE ONLINE VIA STREAMS </p> 
-            </div> 
-        </div> 
-
-        <article class="winners_of_tournaments">
-            <div class="statistics "> 
-                <img src="/assets/img/GBF_300x493_Porsche.png" alt="">
-                <p class="pictureText ">  Mikkel Gade - Vinderen af DM i digital motorsport</p>
-            </div>
-            <div class="statistics "> 
-                <img src="/assets/img/GBF_300x493_GameboxInvitational.png" alt="">
-                <p class="pictureText "> Astralis Talent - Vinderne af Gamebox Invitational</p>
-            </div>
-            <div class="statistics "> 
-                <img src="/assets/img/GBF_300x493_RBSQ.png" alt="">
-                <p class="pictureText "> Curl - Den danske vinder af Redbull Solo Q</p>
-            </div>
-        </article>
-        
-        <article class=" winners_of_tournaments50 "> 
-            <div class="winners "> 
-                <img src="/assets/img/GBF_300x493_DBU_U17+.png" alt="">
-                <p class="winnerText"> Nordens Paris FC - Vinderne af DBU eFodbold U17+</p>
-            </div>
-            <div class="winners "  >  
-                <img src="/assets/img/GBF_300x493_DBU_U13-U16.png" alt="">
-                <p class="winnerText"> Starup UIF - Vinderne af DBU eFodbold U13-U16</p>
-            </div>
-        </article>         
-    
-    <a href="omGamebox.html "> 
-        <button class="centerButton"  > 
-            Læs mere om Gamebox 
-        </button> 
-    </a> 
-
-    </section>
-
-    <section>
-        
-        <h2 > PARTNERE </h2> 
-        
-        <h3 class="alignCenter "> MAIN </h3> 
-        <div class="supportingPartners "> 
-            <img class="partner_logo" src="/assets/img/jyske_bank_logo.png" alt="">
-            <img class="partner_logo" src="/assets/img/itrelation_logo.png" alt="">
-            <img class="partner_logo" src="/assets/img/elgiganten_logo.png" alt="">
-        </div>
-        <div class=" alignCenter "> 
-            <img class="partner_logo" src="/assets/img/hummel_logo.png" alt="">
-            <img class="partner_logo" src="/assets/img/calsberg_sport_logo.png" alt="">
-        </div> 
-
-        <h3 class="alignCenter "> SUPPORTING </h3> 
-        <div class="supportingPartners "> 
-            <img class="partner_logo" src="/assets/img/dgi_logo.png" alt="">
-            <img class="partner_logo" src="/assets/img/dif_logo.png" alt="">
-            <img class="partner_logo" src="/assets/img/esportdanmark_logo.png" alt="">
-            <img class="partner_logo" src="/assets/img/htlv_logo.png" alt="">
-        </div> 
-        <div class="supportingPartners "> 
-           <img class="partner_logo" src="/assets/img/ungdomsringen_logo.png" alt="">
-           <img class="partner_logo" src="/assets/img/danskfirmaidræt_logo.png" alt="">
-           <img class="partner_logo" src="/assets/img/astralis_logo.png" alt="">
-           <img class="partner_logo" src="/assets/img/nph_logo.png" alt="">
-        </div> 
-    </section> 
 </body> 
 
 <footer> 
@@ -232,3 +131,20 @@
 </div>               
 </footer> 
 </html> 
+
+<script> 
+let articleNumber = window.location.hash.replace('#', ""); 
+let articleDOM = document.querySelector ("#articleBox"); 
+let articles = JSON.parse (articlesJS); 
+
+articleDOM.innerHTML = ` 
+    <h2 class="articleHeadline" > ${articles[articleNumber] .title } </h2> 
+    <p class="articleDate " > ${articles[articleNumber] .date} </p> 
+    <img class="articlePicture" src=" ${articles[articleNumber] .picture }"  alt="${articles[articleNumber] .pictureDescription} "> 
+    <p class="pictureDescription"> ${articles[articleNumber] .pictureDescription} </p> 
+    <p class="articleDate "> FOTO: ${articles[articleNumber] .photocredit} </p> 
+    <p class="articleDescription" > ${articles[articleNumber] .description} </p> 
+
+    <p  > ${articles[articleNumber] .article } </p> 
+    ` 
+</script> 

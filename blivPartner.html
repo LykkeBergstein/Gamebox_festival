@@ -2,7 +2,6 @@
 <html lang="en"> 
     <head> 
 
-
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title> Bliv partner </title> 
@@ -10,7 +9,6 @@
         <script src="https://kit.fontawesome.com/a5ae5a65c5.js" crossorigin="anonymous"></script> 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
-
 
     </head> 
     <body> 
@@ -21,6 +19,9 @@
                         <img src="assets/img/gameboxFestivalLogo.png" alt="Gamebox Festivals logo" > 
                     </a> 
                 </div> 
+                <div class="burgerMenu" >  
+                </div> 
+                <div class="mobileMenu" >  
                 <div class="mainMenu" > 
                     <ul class="menuList" > 
                         <li class="menuListItem" > 
@@ -40,9 +41,11 @@
                         </li> 
 
                         <div class="dropdownMenu" > 
-                            <li class="menuListItem  " > 
+                            <li class="menuListItem informationButton " > 
                                 INFORMATION 
                             </li> 
+                            
+
                             <div class="dropdownItems" > 
                                 <a href="faq.html"  class="dropdownItem"  > 
                                     FAQ 
@@ -53,7 +56,7 @@
                                 <a href="regler.html" class="dropdownItem"  >                                      
                                     ORDENSREGLER 
                                 </a>                                           
-                                <a href="" class="dropdownItem"  >                                      
+                                <a href="turneringsregler.html" class="dropdownItem"  > 
                                    TURNERINGSREGLER 
                                 </a> 
                                 <a href="pakkeliste.html" class="dropdownItem"  >                                      
@@ -68,6 +71,7 @@
                             </a> 
                         </li> 
                     </ul> 
+                </div> 
                 </div> 
                 <div class="socialMediaMenu" > 
                     <!-- class="fa-lg" --> 
@@ -134,7 +138,7 @@
                 <div class="contactFooter" > 
                     <li > Tilmeld dig nyhedsbrevet og stay tuned </li> 
                     <div class="custom-field" > 
-                        <input id="email-field " type="email" value="E-mail " >  
+                        <input id="email-field" type="email" value="E-mail " > 
                         <input id="postalcode-field"  type="text" value="Postnummer "  > 
                     </div>     
                     <div class="acceptTerms" > 
@@ -149,3 +153,46 @@
         </div>               
     </footer> 
 </html> 
+<script> /* 
+    function toggleBurgerMenu () { 
+        let toggleIcon = document.getElementsByClassName ("burgerMenu"); 
+            
+        for (let i = 0; i < toggleIcon.length; i++) { 
+            let menu = document.getElementsByClassName ("mobileMenu"); 
+            menu[i].style.visibility = "hidden"; 
+        
+            toggleIcon[i].addEventListener ("click", () => { 
+                console.log(menu[i].style.visibility) 
+                menu[i].style.visibility = menu[i].style.visibility == "hidden" ? "visible" : "hidden"; 
+            })  } 
+    } ; 
+    
+    function toggleInformationMenu () { 
+        let informationButton = document.getElementsByClassName ("informationButton") ; 
+        
+        for (let i = 0; i < informationButton.length; i++) { 
+            let dropdownMenu = document.getElementsByClassName ("dropdownItems"); 
+            dropdownMenu[i].style.visibility = "hidden"; 
+            console.log(dropdownMenu[i].style.visibility ) 
+            dropdownMenu[i].style.visibility = dropdownMenu[i].style.visibility == "hidden" ? "visible" : "hidden"; 
+        } 
+    } */ 
+
+        toggleBurgerMenu (); 
+        toggleInformationMenu (); 
+              /*  let checkboxIcon = document.getElementsByClassName ("faqIcon"); 
+          toggleIcon.addEventListener ("click", () => { 
+      
+        for (let i = 0; i < toggleIcon.length; i++) { 
+            toggleIcon[i].nextElementSibling.style.visibility = "hidden"; 
+            toggleIcon[i].addEventListener ("click", () => { 
+                let answer = toggleIcon[i].nextElementSibling ; 
+    
+                answer.style.visibility = answer.style.visibility == "hidden" ? "visible" : "hidden"; 
+                answer.style.height = answer.style.height == "auto" ? "0px" : "auto"; 
+    
+    
+            }) 
+        } */ 
+    </script> 
+    

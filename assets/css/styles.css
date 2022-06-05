@@ -79,6 +79,14 @@ button {
     color: #FFFFFF; 
 } 
 
+button:hover{ 
+    animation: buttonAnimation 5s ; 
+} 
+
+@keyframes buttonAnimation {  
+    from { background-color: transparent; } 
+    to {     background-image: linear-gradient(45deg, #E9434A , #D311EB );  } 
+} 
 .underlineLink { 
     text-decoration: underline; 
     color: #FFFFFF; 
@@ -97,7 +105,7 @@ a {
     height: 120px; 
     background-color: #000000; 
 } 
-.mobileMenu { 
+#mobileMenu , .mobileMenu { 
     display: block; 
     margin: auto 0; 
 }     
@@ -105,7 +113,7 @@ a {
     display: block; 
     width: 148px;  
     height: 55px; 
-    padding-left: 140px; 
+    padding-left: 120px; 
     margin: auto; 
 }  
     
@@ -116,7 +124,7 @@ a {
     margin: auto; 
 }  
     
-.menuListItem { 
+.menuListItem , .informationButton { 
     display: block; 
     color: #FFFFFF; 
     font-size: 16px; 
@@ -131,6 +139,7 @@ a {
 .dropdownMenu { 
     height: auto; 
     margin: auto 30px; 
+    z-index: 2; 
 } 
 
 .dropdownItems { 
@@ -144,18 +153,18 @@ a {
     color: #FFFFFF; 
 } 
 
-.dropdownMenu:hover .dropdownItems { 
+.dropdownMenu:hover  .dropdownItems { 
     display: flex; 
 } 
 
     .dropdownItem { 
     display: block; 
     width: auto; 
-    
     height: 30px; 
-    background-color: purple; 
+    background-color: #000000; 
     padding: 25px 10px; 
     } 
+
     .socialMediaMenu , .logoDiv {  
     display: flex; 
     flex-direction: row;  
@@ -174,26 +183,46 @@ a {
     font-size: 16px; 
     color: #FFFFFF; 
     } 
+#burgerMenu , .burgerMenu { 
+    display: none; 
+} 
 /* Forside */ 
     .headerVideo { 
         display: block; 
         width: 100%; 
-        height: 600px;  
-        background-color: #000000; 
+        height: 600px; 
     } 
+    video { 
+
+        width: 100%; 
+        height: auto; 
+        z-index: 0; 
+        top: 0; 
+    } 
+
+    .videoOverlay { 
+        display: block; 
+        width: 100%; 
+        z-index: 1; 
+        position: absolute; 
+
+        top: 120px; 
+    } 
+
     .headerText { 
     width: 700px; 
     font-size: 55px; 
     line-height: 1.5; 
     text-align: center; 
+
     margin: auto; 
-    padding-top: 10vh; 
+    padding-top: 15vh;  
     background-size: 100%; 
     background-image: linear-gradient(45deg, #E9434A , #D311EB ); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    } 
-    
+    }    
+
 .headerButton { 
     display: block; 
     font-size: 20px; 
@@ -203,7 +232,14 @@ a {
     background-color: transparent; 
     color: #FFFFFF; 
     height: 100px; 
+    margin: auto; 
+    margin-top: 15vh; 
 }  
+
+.headerButton :hover {  
+
+} 
+
 .partner_logo { 
 
     padding: 5vh ; 
@@ -248,16 +284,20 @@ a {
     padding-top: 15px; 
     width: 100%; 
 } 
-.highlightNumbers {   
+.highlightNumbers {  
+    width: 150px;  
     font-size: 35px; 
     margin: 0; 
 } 
 
 .highlightText { 
     font-size: 16px; 
+    width: 250px; 
     margin: 0; 
 } 
-
+.winnerText { 
+    width: 475px; 
+} 
 .supportingPartners  { 
     display: flex; 
     flex-direction: row; 
@@ -295,6 +335,30 @@ a {
     border-bottom: 1px solid #FFFFFF; 
     height: 55px; 
 } 
+
+.newsHeadline , .articleDate { 
+    text-transform: uppercase; 
+} 
+
+/* Article */ 
+.newsHeadline { 
+
+    width: 950px; 
+} 
+
+.articleDescription { 
+    font-size: 25px; 
+    font-weight: bold; 
+    margin: 5vh auto; 
+} 
+
+.articlePicture { 
+    display: block; 
+    margin: 2.5vh auto;  
+} 
+.boldText { 
+    font-weight: bold; 
+} 
 /* Om Gamebox Festival */ 
 article { 
     padding-bottom: 5vh; 
@@ -319,7 +383,11 @@ article {
     width: 100%; 
     border-bottom: 2px solid #FFFFFF; 
 } 
- 
+
+.questionAnswer { 
+    height: auto; 
+} 
+
 .faqIcon { 
     display: block; 
     align-self: right; 
@@ -402,7 +470,7 @@ p , .ruleList , .contactPartner , .partnerPromotion {
         display: block; 
         background-color: #000000; 
         height: auto; 
-        width: 100vw; 
+        width: 100%; 
         bottom: 0; 
         margin-top: 10vh; 
         padding-bottom: 5vh; 
@@ -436,11 +504,13 @@ p , .ruleList , .contactPartner , .partnerPromotion {
 .custom-field { 
     display: flex; 
     flex-direction: column; 
+    height: auto; 
 } 
 .mainbox { 
     display: flex; 
     flex-direction: column; 
 } 
+
 
 #email-field  #postalcode-field { 
     display: block; 
@@ -450,8 +520,10 @@ p , .ruleList , .contactPartner , .partnerPromotion {
     color: #707070; 
     border: none; 
     font-size: 16px; 
-    padding: 5vh 0px; 
 } 
+#postalcode-field { 
+    margin-top: 10px; 
+}  
 
 .acceptTerms { 
     display: flex; 
@@ -487,34 +559,59 @@ p , .ruleList , .contactPartner , .partnerPromotion {
 
     body { 
         display: block ; 
-        background-color: red; 
-        color: red; 
     } 
 
+    h2 { 
+        font-size: 30px;  
+    } 
+
+    h3 { 
+        width: 80%; 
+        font-size: 22px; 
+        padding-bottom: 2.5vh;      
+    } 
+
+    p { 
+        font-size: 14px; 
+        width: 80%; 
+        margin: auto; 
+    } 
+    .centerButton { 
+
+        width: 80%; 
+    } 
+
+    /* Main navigation menu */ 
     .mainNavigation { 
         display: flex ; 
         flex-direction: row; 
         width: 100%; 
         height: 120px; 
-        background-color: yellow; 
+        background-color: #000000; 
     } 
 
     .logo { 
         display: block; 
         width: 75px;  
         height: auto;  
-       align-items: left; 
+       padding-left: 0; 
     } 
-
+/* 
     .mobileMenu { 
         display: block; 
         background-color: pink; 
         width: 100%; 
         height: 100%; 
+        visibility: hidden; 
         position: absolute; 
         margin-top: 120px; 
     }     
-   
+   .burgerMenu { 
+       display: inline-block; 
+       background-color: green; 
+       width: 50%;  
+       height: 25px; 
+   } 
     .menuList { 
         display: flex; 
         flex-direction: column; 
@@ -578,5 +675,111 @@ p , .ruleList , .contactPartner , .partnerPromotion {
     .socialMediaMenu  {  
         display: none; 
     } 
-   
+*/ 
+    /* Billetter */ 
+
+    .h3billetter { 
+        font-size: 18px; 
+        margin-bottom: 25px; 
+        width: 80%; 
+    } 
+
+    #email-field , #postalcode-field { 
+        margin: auto; 
+        width: 80%; 
+    } 
+
+    #postalcode-field { 
+        margin: 2.5vh auto 1.5vh auto; 
+    } 
+
+    .acceptTerms { 
+        width: 80%; 
+        margin: auto; 
+        margin-bottom: 25px; 
+    } 
+    .newsletterButton {  
+        margin: auto; 
+        width: 80%; 
+    } 
+    /* FAQ */ 
+    .question , .answer { 
+        width: 80%; 
+        margin: auto; 
+    } 
+    .question { 
+        width: 80%; 
+        display: flex; 
+        flex-direction: row; 
+    } 
+    .faqIcon img { 
+        margin-left: 11vw; 
+        margin-right: 0; 
+    }  
+
+    .question h3 { 
+        display: inline-block; 
+        font-size: 18px; 
+        margin: 0; 
+    } 
+    .answer p { 
+
+        margin: 0; 
+        width: 100%; 
+    } 
+    /* Turneringsregler */ 
+
+   .ruleList { 
+       font-size: 14px; 
+       width: 80%; 
+       margin: auto; 
+   } 
+   /* Nyheder */ 
+   .newsArticle { 
+        width: 100%; 
+        margin: auto; 
+   } 
+
+   .newsHeadline { 
+       width: 80%;  
+       font-size: 18px; 
+    } 
+   .articleDate { 
+        width: 80%; 
+        margin: auto; 
+   } 
+   .lineBox { 
+    height: 15px; 
+    width: 80%; 
+    padding: 0;  
+   } 
+
+   /* Artikel */ 
+   .articleHeadline { 
+       width: 80%; 
+       font-size: 22px; 
+   } 
+
+   .articlePicture { 
+       height: 300px; 
+       width: auto; 
+       object-fit: cover; 
+   } 
+   .articleDescription { 
+       font-size: 20px; 
+   } 
+
+   .pictureDescription { 
+       font-size: 10px;  
+   } 
+   .articleDate { 
+       font-size: 12px; 
+   } 
+   .boldText { 
+       font-size: 15px; 
+   } 
+   /* Footer */ 
+   footer { 
+       display: none; 
+   } 
 } 
